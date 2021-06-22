@@ -1,8 +1,8 @@
 {
  "manifest_version": 2,
  "name": "Histórico Minds",
- "version": "3.0.0",
- "description": "Faz a contagem e soma de aulas e notas.",
+ "version": "3.1.0",
+ "description": "Analisa o histórico pedagógico e gera um relatório de carga-horárias e notas.",
  "short_name": "Minds",
  "permissions": ["activeTab"],
  "content_scripts": [
