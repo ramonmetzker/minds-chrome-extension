@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        #popup{
+            width: 230px;
+            background: #F0F2FF;
+            color: #000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-family: 'Century Gothic',sans-serif;
+            font-size: 15px;
+        }
+        #button{
+            display: flex;
+            padding: 5px 10px;
+            background: #007bff;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 15px;
+            border: none;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: .2s ease;
+        }
+        #button:hover{
+            background: #0065c9;
+        }
+        #button span{
+            display: inline-block;
+
+        }
+        #button svg{
+            height: 15px;
+            margin-right: 5px;
+            padding: 0;
+            font-size: 100%;
+            display: inline-block;
+        }
+        table{
+            font-size: 14px;
+        }
+        table tr td{
+            border: 1px solid #bbbbbb;
+            border-collapse:separate;
+            padding: 5px;
+            border-radius: 15px;
+            min-width: 50px;
+        }
+        table tr td:first-child{
+            padding: 5px 15px;
+        }
+        table tr:nth-child(2){
+            padding: 5px 10px;
+        }
+        .certificate{
+            margin-top: 10px;
+            width: 70%;
+            background: #20c997;
+            border-radius: 50px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        #horas, #media{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        #logo img{
+            max-width: 50%;
+            margin-top: 10px;
+        }
+    </style>
+    <div id="popup">
+        <a href="#" id="button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg> <span>Check Classes</span></a>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>#</th>
+                <th>Avg</th>
+            </tr>
+            <tr>
+                <td>UNIT</td>
+                <td id="unit">0</td>
+                <td id="medUnit">0.00</td>
+            </tr>
+            <tr>
+                <td>STARTER</td>
+                <td id="starter">0</td>
+                <td id="medStarter">0.00</td>
+            </tr>
+            <tr>
+                <td>BASIC</td>
+                <td id="basic">0</td>
+                <td id="medBasic">0.00</td>
+            </tr>
+            <tr>
+                <td>INTER</td>
+                <td id="inter">0</td>
+                <td id="medInter">0.00</td>
+            </tr>
+            <tr>
+                <td>JOY</td>
+                <td id="joy">0</td>
+                <td id="medJoy">0.00</td>
+            </tr>
+            <tr>
+                <td>ADV</td>
+                <td id="adv">0</td>
+                <td id="medAdv">0.00</td>
+            </tr>
+            <tr>
+                <td>UPPER</td>
+                <td id="upper">0</td>
+                <td id="medUpper">0.00</td>
+            </tr>
+            <tr>
+                <td>UP PLUS</td>
+                <td id="plus">0</td>
+                <td id="medPlus">0.00</td>
+            </tr>
+        </table>
+        <div class="certificate">
+            <span>Total of hours</span>
+            <span id="horas">0</span>
+        </div>
+        <div class="certificate">
+            <span>Average grade</span>
+            <span id="media">0</span>
+        </div>
+        <div id="logo">
+            <img src="logo.png" alt="Logo Minds">
+        </div>
+    </div>
+</body>
+</html>
+
