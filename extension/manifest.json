@@ -1,0 +1,23 @@
+{
+ "manifest_version": 2,
+ "name": "Histórico Minds",
+ "version": "3.0.0",
+ "description": "Faz a contagem e soma de aulas e notas.",
+ "short_name": "Minds",
+ "permissions": "activeTab",
+ "content_scripts": [
+   {
+     "matches": ["https://www.managementminds.com.br/novo/alunos/*"],
+     "js": ["app.js", "popup.js"]
+   }
+ ],
+ "browser_action": {
+   "default_title": "Check History!",
+   "default_popup": "popup.html",
+   "default_icon": {
+     "32": "icon.png",
+     "64": "icon.png",
+     "128": "icon.png"
+   }
+ }
+}

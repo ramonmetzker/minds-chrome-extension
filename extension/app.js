@@ -1,7 +1,6 @@
-var int = joy = bas = sta = adv = up = plus = unt = untRev = 0;
-var medSta = medBas = medInt = medJoy = medAdv = medUp = medPlus = medUnt = average = horas = 0;
+var int = 0, joy = 0, bas = 0, sta = 0, adv = 0, up = 0, plus = 0, unt = 0, untRev = 0;
+var medSta = 0, medBas = 0, medInt = 0, medJoy = 0, medAdv = 0, medUp = 0; medPlus = 0; medUnt = 0; average = 0;
 var lista = document.getElementById("listaHistoricoPedagogico");
-
 for (let i = 0, row; row = lista.rows[i]; i++){
 	var col = row.cells;
 	var aula = lista.rows[i].cells[2].children[0].innerHTML;
@@ -102,6 +101,3 @@ chrome.runtime.sendMessage({
 }, function(response){
 	console.log(response.status);
 })
-
-int = joy = bas = sta = adv = up = plus = unt = untRev = 0;
-medSta = medBas = medInt = medJoy = medAdv = medUp = medPlus = medUnt = average = horas = 0;
